@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Todo List</title>
+        <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+        </script>
+
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+
+    <h1 style="color: black;">My Login Lists</h1>
+
+
+    <div id="todo-table">
+        <script src="/assets/todo-list.js"></script>
+        <form name="myForm" id="loginForm" action="">
+            <input type="text" name="email" placeholder="Enter Email.." required="true"/>
+            <input type="text" name="password" placeholder="Enter Password..." required="true"/>
+            <button type="submit">Login</button>
+        </form>
+        <button  onclick="location.href = '/todo';">Sign up</button>
+        <ul>
+            <% for (var i=0;i<abc.length;i++){%>
+                <li><%= abc[i].username %></li>
+
+            <% } %>
+        </ul>
+    </div>
+
+</body>
+
+
+
+</html>
